@@ -1,7 +1,5 @@
 Running the Twitter Steam Word Count Application
 
-(If you are reading this, you have already cloned the appropriate repository from Github and navigated to the top level directory of the Twitter Stream Word Count application.)
-
 1. Navigate down to the “extweetwordcount” directory by entering “cd extweetwordcount”. This is the directory of the Streamparse project.
 
 2. At the command line, enter “sparse run.”
