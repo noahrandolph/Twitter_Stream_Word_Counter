@@ -40,19 +40,17 @@ The file structure must be in the format shown above. Postgres should be running
 The [Psycopg](http://initd.org/) database adaptor and [Tweepy](http://www.tweepy.org/) library must be installed for Python to access Postgres and for accessing the Twitter API from Python.
 
 ### Running the Application
-1. At the command line interface, clone the repository at https://github.com/noahrandolph/w205_2017_fall.git by entering “git clone https://[your_username]@github.com/noahrandolph/w205_2017_fall.git. Use your Github username for [your_username].
-2. Enter your Github password.
-3. Enter “ls -l” to verify the repository was cloned. You should see the directories “README.md,”  “exercise_1,”  “exercise_2,” and  “project.”
-4. Navigate down to the “excercise_2” directory by entering “cd exercise_2”. This is the top level directory for the application.
-5. Navigate down to the “extweetwordcount” directory by entering “cd extweetwordcount”. This is the directory of the Streamparse project.
-6. At the command line, enter “sparse run.”
-7. Wait while the Twitter stream is accessed. After a brief period, a stream of words processed by the topology will scroll up the command line interface.
-8. Allow a few moments for the stream to run. The database is gathering new words and word counts.
-9. Enter “control” + “c” to stop the stream.
-10. Navigate back up to the top level by entering “cd ..”
-11. Enter “ls -l” and verify you are in the correct directory. You should see the the files “finalresults.py” and “histogram.py.”
-12. Get an alphabetized list of all the words streamed by entering “python finalresults.py” in the command line.
-13. Get the total counts of a word of your choosing by entering “python finalresults.py [word of your choosing]”
-14. Get the words with counts between numbers of your choosing by entering “python histogram.py [x1],[x2]” where [x1] is a lower bound integer and [x2] is an upper bound integer. 
+1. Navigate down to the “extweetwordcount” directory by entering “cd extweetwordcount”. This is the directory of the Streamparse project.
+2. At the command line, enter “sparse run.”
+3. Wait while the Twitter stream is accessed. After a brief period, a stream of words processed by the topology will scroll up the command line interface.
+4. Allow a few moments for the stream to run. The database is gathering new words and word counts.
+5. Enter “control” + “c” to stop the stream.
+6. Navigate back up to the top level by entering “cd ..”
+7. Enter “ls -l” and verify you are in the correct directory. You should see the the files “finalresults.py” and “histogram.py.”
+8. Get an alphabetized list of all the words streamed by entering “python finalresults.py” in the command line.
+9. Get the total counts of a word of your choosing by entering “python finalresults.py [word of your choosing]”
+10. Get the words with counts between numbers of your choosing by entering “python histogram.py [x1],[x2]” where [x1] is a lower bound integer and [x2] is an upper bound integer. 
 
 (The longer the process is allowed to run in step 8, the more words will result.)
+
+![](Plot.png)
