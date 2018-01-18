@@ -9,7 +9,7 @@ Noah Randolph
 * file dependencies and running the application  
 
 ### Application Idea
-Displays user-specified word counts obtained from all tweets during a user-specified amount of time. The user has 3 options for reporting word counts: 1. Get total counts of a single user-specified word; 2. Get an alphabetized list of all words gathered from stream and the number of times each word occurred; 3. Get a list of all words that occurred between x1 and x2 times, inclusive, where x1 is a lower limit integer and x2 is an upper limit integer.
+Displays user-specified word counts obtained from all tweets during a user-specified amount of time. The user has 3 options for reporting word counts: 1. Get total counts of a single user-specified word; 2. Get an alphabetized list of all words gathered from stream and the number of times each word occurred; 3. Get a list of all words that occurred between x1 and x2 number of occurences, inclusive, where x1 is a lower limit integer and x2 is an upper limit integer.
 
 ### Description of the Architecture
 An application created at https://apps.twitter.com/ provides access to all tweets after confirming credentials. Three spout components (defined in tweets.py) read tweets using the [Tweepy](http://www.tweepy.org/) library. The tweets are then processed by a parsing bolt that splits tweets into separate words and removes several symbols in order to have a clearer count of unique words. From that bolt, the stream of processed words are further processed by a bolt that connects to the Postgres database “tcount” and adds or updates words with new counts in the table “tweetwordcount.”
